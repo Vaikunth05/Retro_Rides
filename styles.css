@@ -1,0 +1,143 @@
+@import url(https://db.onlinewebfonts.com/c/836a54e6f5313f999bb7066c762ea893?family=Silka+Mono);
+@import url(https://db.onlinewebfonts.com/c/314799d808058420a00fdd2500eb1aa3?family=Silka);
+
+* {
+    font-family: "Silka Mono";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    --gradient-1: linear-gradient(70deg, rgba(24, 23, 23, 0.8) 9%, rgba(24, 23, 23, 0.7) 30%, rgba(24, 23, 23, 0) 75%);
+}
+
+/* html,
+body {
+    width: 1440px;
+} */
+
+body {
+    height: 100vh;
+    width: 100%;
+    /* background-color: #DEDDD8; */
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    margin: auto auto;
+
+}
+
+
+.hero {
+    height: 860px;
+    width: 100%;
+    background-image: var(--gradient-1), url("valdemaras-januska-eKls9YS3BWo-unsplash.png");
+    background-size: auto, cover;
+    /*  aspect-ratio: calc(1440/860); */
+    /*  position: absolute; */
+    overflow-x: hidden;
+
+}
+
+/* .background {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} */
+
+.navbar {
+    /* position: relative; */
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1440px;
+    height: 84px;
+}
+
+.logo {
+    height: 32px;
+    width: 192px;
+    margin-left: -20px;
+}
+
+nav>ul {
+    width: 527px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+ul>li {
+    list-style: none;
+    padding: 8px;
+    color: #DEDDD8;
+}
+
+#reserve {
+    background: #D89547;
+    width: 151px;
+    height: 44px;
+    padding: 10px 18px 10px 18px;
+    gap: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+}
+
+.intro {
+    width: auto;
+    padding-left: 80px;
+    /* margin-top: calc(470px - 84px); */
+}
+
+.intro p {
+    color: #D3D1CB;
+    margin-top: calc(470px - 84px);
+    width: 55%;
+    font-size: 22px;
+    line-height: 24px;
+    letter-spacing: -0.03em;
+    margin-bottom: 16px;
+}
+
+.intro h2 {
+    font-family: "Silka";
+    color: #DEDDD8;
+    width: 780px;
+    height: 186px;
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 62px;
+    letter-spacing: -0.04em;
+}
+
+.buttons {
+    padding-left: 80px;
+    margin-top: 40px;
+}
+
+#our-fleet {
+    background: #D89547;
+    width: 131px;
+    height: 44px;
+    padding: 10px 18px 10px 18px;
+    gap: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19px;
+    text-align: center;
+}
+
+#about-us {
+    background: none;
+    color: #D3D1CB;
+    padding-left: 20px;
+}
