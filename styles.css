@@ -18,35 +18,40 @@ body {
 body {
     height: 100vh;
     width: 100%;
-    /* background-color: #DEDDD8; */
+    background-color: #DEDDD8;
     /* display: flex;
     align-items: center;
     justify-content: center; */
     margin: auto auto;
-
 }
 
+/* || Hero Section || */
 
 .hero {
     height: 860px;
     width: 100%;
     background-image: var(--gradient-1), url("valdemaras-januska-eKls9YS3BWo-unsplash.png");
     background-size: auto, cover;
-    /*  aspect-ratio: calc(1440/860); */
+    background-size: 100% 860px;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+    /* aspect-ratio: calc(72/43); */
     /*  position: absolute; */
     overflow-x: hidden;
-
+    /* padding-left: 35px; */
 }
 
-/* .background {
+.background {
+    width: 100%;
     position: absolute;
     z-index: -1;
-    top: 0;
-    left: 0;
+    /* top: 0;
+    left: 0; */
     display: flex;
     align-items: center;
     justify-content: center;
-} */
+    object-fit: cover;
+}
 
 .navbar {
     /* position: relative; */
@@ -72,11 +77,17 @@ nav>ul {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 8px;
 }
 
 ul>li {
     list-style: none;
-    padding: 8px;
+    /* padding: 8px; */
+    color: #DEDDD8;
+}
+
+ul>li>a {
+    text-decoration: none;
     color: #DEDDD8;
 }
 
@@ -88,7 +99,8 @@ ul>li {
     gap: 8px;
     font-size: 14px;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 19.2px;
+    letter-spacing: -0.03em;
     text-align: center;
 }
 
@@ -122,9 +134,14 @@ ul>li {
 .buttons {
     padding-left: 80px;
     margin-top: 40px;
+    vertical-align: middle;
 }
 
-#our-fleet {
+.buttons a {
+    text-decoration: none;
+}
+
+.fleet-btn {
     background: #D89547;
     width: 131px;
     height: 44px;
@@ -134,10 +151,87 @@ ul>li {
     font-weight: 500;
     line-height: 19px;
     text-align: center;
+    color: #222222;
 }
 
-#about-us {
+.about-btn {
     background: none;
     color: #D3D1CB;
-    padding-left: 20px;
+    padding: 20px;
 }
+
+/* || About-Us Section || */
+
+.about-us {
+    max-height: 731px;
+    /* height: 100%; */
+    padding: 80px;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.line {
+    position: relative;
+    top: calc(416px - 80px);
+    border: 1px solid #BCC2B8;
+    z-index: 0;
+}
+
+.about p {
+    font-family: "Silka";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    color: #222222;
+    letter-spacing: -0.05em;
+    width: 742px;
+}
+
+.info {
+    padding-left: 40px;
+    padding-top: 5px;
+    width: 562px;
+}
+
+.info p {
+    font-family: "Silka Mono";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.12px;
+    color: #222222;
+    letter-spacing: -0.03em;
+}
+
+.stats {
+    display: flex;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+
+.des1,
+.des2 {
+    display: block;
+    padding-top: 20px;
+    height: 83px;
+}
+
+.stat1,
+.stat2 {
+    font-family: "Silka";
+    font-weight: 400;
+    font-size: 60px;
+    line-height: 72px;
+    letter-spacing: -0.05em;
+    /* padding-bottom: 20px; */
+}
+
+.about-us img {
+    position: relative;
+    left: 0px;
+    top: calc(303px - 224px);
+}
+
+/* || Fleet Section || */
