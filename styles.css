@@ -8,6 +8,8 @@
     box-sizing: border-box;
 
     --gradient-1: linear-gradient(70deg, rgba(24, 23, 23, 0.8) 9%, rgba(24, 23, 23, 0.7) 30%, rgba(24, 23, 23, 0) 75%);
+    --gradient-2: linear-gradient(163deg, #222222 2%, rgba(34, 34, 34, 0) 82%);
+    ;
 }
 
 /* html,
@@ -30,8 +32,10 @@ body {
 .hero {
     height: 860px;
     width: 100%;
+    margin: auto auto;
     background-image: var(--gradient-1), url("valdemaras-januska-eKls9YS3BWo-unsplash.png");
     background-size: auto, cover;
+    background-position: center;
     background-size: 100% 860px;
     background-repeat: no-repeat;
     background-clip: border-box;
@@ -57,15 +61,17 @@ body {
     /* position: relative; */
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    width: 1440px;
+    justify-content: space-between;
+    width: 100%;
     height: 84px;
+    padding-left: 80px;
+    padding-right: 80px;
 }
 
 .logo {
     height: 32px;
     width: 192px;
-    margin-left: -20px;
+    /* margin-left: -20px; */
 }
 
 nav>ul {
@@ -92,6 +98,7 @@ ul>li>a {
 }
 
 #reserve {
+    display: block;
     background: #D89547;
     width: 151px;
     height: 44px;
@@ -102,6 +109,7 @@ ul>li>a {
     line-height: 19.2px;
     letter-spacing: -0.03em;
     text-align: center;
+    border: none;
 }
 
 .intro {
@@ -166,6 +174,8 @@ ul>li>a {
     max-height: 731px;
     /* height: 100%; */
     padding: 80px;
+    width: 100%;
+    margin: auto auto;
 }
 
 .flex-container {
@@ -235,3 +245,194 @@ ul>li>a {
 }
 
 /* || Fleet Section || */
+
+.fleet {
+    padding: 80px;
+    height: 1265px;
+    width: 100%;
+}
+
+.hook {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto auto;
+}
+
+.hook p {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21.12px;
+    letter-spacing: -0.03em;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.head {
+    font-family: "Silka";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+    text-align: center;
+    width: 742px;
+}
+
+.fleet img {
+    width: 413px;
+    height: 310px;
+    object-fit: cover;
+    /* X-axis Y-axis  */
+    aspect-ratio: 4 / 3;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 413px);
+    grid-auto-columns: 413px;
+    grid-auto-rows: 381px;
+    column-gap: 56px;
+    row-gap: 48px;
+    padding: 60px 0px;
+    width: 100%;
+    margin: auto auto;
+}
+
+.car-card {
+    height: 381px;
+    width: 413px;
+    display: inline-block;
+    position: relative;
+}
+
+.car-card .price {
+    display: inline;
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    color: #222222;
+    background: #DEDDD8;
+    width: 126px;
+    height: 26px;
+    border-radius: 200px;
+    font-weight: 200;
+    font-size: 12px;
+    line-height: 14.4px;
+    letter-spacing: -0.03em;
+    align-items: center;
+    padding: 6px 16px;
+    gap: 8px;
+    z-index: 2;
+}
+
+/* 
+.car1 {
+    object-position: 0% 62%;
+}
+
+.car2 {
+    object-position: 0% 59%;
+}
+
+.car3 {
+    object-position: 35% 49%;
+}
+
+.car4 {
+    object-position: 46% 59%;
+}
+
+.car5 {
+    object-position: 60% 48%;
+}
+
+.car6 {
+    object-position: 0% 59%;
+}
+ */
+
+.details {
+    padding-top: 20px;
+}
+
+.year-name {
+    font-family: "Silka";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 24.96px;
+    letter-spacing: -0.03em;
+    width: 413px;
+}
+
+.details p {
+    font-family: "Silka Mono";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 18.48px;
+    letter-spacing: -0.03em;
+    padding-top: 8px;
+}
+
+.full-fleet-btn {
+    background: #D89547;
+    width: 245px;
+    height: 44px;
+    padding: 10px 18px 10px 18px;
+    gap: 8px;
+    margin: auto auto;
+    display: block;
+    border: none;
+}
+
+.full-fleet-btn span {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 19.2px;
+    letter-spacing: -0.03em;
+    text-align: center;
+    color: #222222;
+}
+
+/* || Inspiration Section || */
+
+.inspiration {
+    height: 860px;
+    width: 100%;
+    background-image: var(--gradient-2), url("spencer-davis-ts2h4XcIrdo-unsplash.jpg");
+    background-size: auto, cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-clip: border-box;
+}
+
+/* .inspiration img {
+    height: 860px;
+    width: 100%;
+    object-fit: cover;
+} */
+
+.how-it-works {
+    padding: 80px;
+}
+
+.one-liner {
+    display: block;
+    font-family: "Silka";
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 48px;
+    letter-spacing: -0.05em;
+    width: 516px;
+    color: #DEDDD8;
+}
+
+.how-it-works p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21.12px;
+    letter-spacing: -0.03em;
+    width: 522px;
+    color: #DEDDD8;
+    margin-top: 20px;
+}
